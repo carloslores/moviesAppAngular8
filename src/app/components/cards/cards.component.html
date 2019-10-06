@@ -1,0 +1,17 @@
+<div class="row justify-content-center">
+    <div *ngFor="let movie of items" class="col-sm-6 col-md-3 col-lg-4 col-xl-2 m-5 animated fadeIn">
+        <div   class="card puntero">
+          <img src="https://image.tmdb.org/t/p/w400{{movie.poster_path}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{movie.title}}</h5>
+            <p class="card-text">
+                    <a  href="#" class="badge badge-primary">
+                       
+                    </a>
+            </p>
+            <p class="card-text"><small class="text-muted">{{movie.release_date}}</small></p>
+            <p class="card-text"><small class="text-muted">{{movie.popularity}}</small></p>
+          </div>
+        </div>
+    </div>
+</div>
