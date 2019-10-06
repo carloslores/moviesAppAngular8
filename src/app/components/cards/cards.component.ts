@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router,  RouterModule  } from '@angular/router';
 
 @Component({
   selector: 'app-cards',
@@ -7,8 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class CardsComponent  {
   @Input() items: any[] = [];
-  constructor() { }
+  constructor( private router: Router) { }
 
+  seeMovie(item:any){
+    let movieId = item.id;
+    this.router.navigate(['/movie', movieId])
+
+  }
  
 
 }

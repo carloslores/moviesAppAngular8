@@ -1,5 +1,5 @@
 <div class="row justify-content-center">
-    <div *ngFor="let movie of items" class="col-sm-6 col-md-3 col-lg-4 col-xl-2 m-5 animated fadeIn">
+    <div (click)="seeMovie(movie)" *ngFor="let movie of items" class="col-sm-6 col-md-3 col-lg-4 col-xl-2 m-5 animated fadeIn">
         <div   class="card puntero">
           <img src="https://image.tmdb.org/t/p/w400{{movie.poster_path}}" class="card-img-top" alt="...">
           <div class="card-body">
